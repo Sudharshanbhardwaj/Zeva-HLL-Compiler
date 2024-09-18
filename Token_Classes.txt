@@ -1,0 +1,60 @@
+Token Classes and Regular Expressions:
+
+1. Identifier:
+   Regular Expression: [a-zA-Z_][a-zA-Z0-9_]*
+   Explanation: Matches valid identifiers, starting with a letter or underscore, followed by letters, digits, or underscores.
+
+2. Integer Constant:
+   Regular Expression: 0|[1-9][0-9]*
+   Explanation: Matches positive integers.
+
+3. Real Constant:
+   Regular Expression: \d+\.\d+
+   Explanation: Matches floating-point numbers.
+
+4. String:
+   Regular Expression: "([^"\\]|\\.)*"
+   Explanation: Matches strings enclosed in double quotes, allowing for escaped characters.
+
+5. Operator:
+   Regular Expression: ==|!=|<=|>=|<|>|&&|\|\||\+|\-|\*|/|%|\*\*
+   Explanation: Matches various operators such as comparison, logical, arithmetic, and exponentiation.
+
+6. Punctuators:
+   - Left Parenthesis:
+     Regular Expression: r'\('
+     Explanation: Matches the left parenthesis character '('.
+   - Right Parenthesis:
+     Regular Expression: r'\)'
+     Explanation: Matches the right parenthesis character ')'.
+   - Semicolon:
+     Regular Expression: r';'
+     Explanation: Matches the semicolon character ';'.
+   - Comma:
+     Regular Expression: r','
+     Explanation: Matches the comma character ','.
+   - Left Square Parenthesis:
+     Regular Expression: r'\['
+     Explanation: Matches the left square parenthesis character '['.
+   - Right Square Parenthesis:
+     Regular Expression: r'\]'
+     Explanation: Matches the right square parenthesis character ']'.
+   - Dot:
+     Regular Expression: r'\.'
+     Explanation: Matches the dot character '.'.
+
+7. Keywords:
+   - var, int, bool, begin, end, if, elif, else, while, zout, str, func, return, for, con, tuple, list, add, size, front, rear, delete, true, false, try, except
+   Explanation: Matches specific keywords as whole words.
+
+8. Quotation:
+   Regular Expression: "([^"\\]|\\.)*"
+   Explanation: Matches strings enclosed in double quotes, allowing for escaped characters.
+
+9. Key Words:
+   - PROGRAM, var, int, bool, begin, end, for, true, false, if, elif, else, zout, while, str, func, return, try, except, add, size, list, delete, front, rear, con, tuple
+   Explanation: Matches specific keywords and assigns them to predefined token types.
+
+10. End of File (EOF):
+    Regular Expression: N/A
+    Explanation: Represents the end of the input file.
